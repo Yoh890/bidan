@@ -195,59 +195,93 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          {{-- <li class="nav-item">
-            <a href="{{ route('dashboard') }}" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-              </p>
-            </a>
-          </li>
-              <li class="nav-item">
-                <a href="{{ route('adm') }}" class="nav-link">
-                  <i class="far fa-user nav-icon"></i>
-                  <p>Admin</p>
+               <li class="nav-item">
+                <a href="/suplier" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{ route('brg') }}" class="nav-link">
-                  <i class="nav-icon fas fa-th nav-icon"></i>
-                  <p>Barang</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('jns') }}" class="nav-link">
-                    <i class="fa fa-folder-open nav-icon" aria-hidden="true"></i>
-                  <p>Jenis</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{ route('sup') }}" class="nav-link">
-                    <i class="fa fa-truck nav-icon" aria-hidden="true"></i>
-                  <p>Supplier</p>
-                </a>
-              </li>
-          <li class="nav-item">
-            <a href="{{ route('trk') }}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Transaksi
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-              <li class="nav-item">
-                <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
-                                                                                document.getElementById('logout-form').submit();">
-
-                  <i class="nav-icon fas fa-sign-out-alt"></i>
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
-                    LogOut
+                    Data Master
+                    <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                  @csrf
-                </form>
-              </li> --}}
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="/admin" class="nav-link">
+                      <i class="far fa-user nav-icon"></i>
+                      <p>Bidan</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/barang" class="nav-link">
+                      <i class="nav-icon fas fa-th nav-icon"></i>
+                      <p>User</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/jenis" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Konsultasi</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Data Pasien
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="/admin" class="nav-link">
+                      <i class="far fa-user nav-icon"></i>
+                      <p>Pasien</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/barang" class="nav-link">
+                      <i class="nav-icon fas fa-th nav-icon"></i>
+                      <p>Pasien Hamil</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/jenis" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Pasien KB</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Data Rekamedis
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="/admin" class="nav-link">
+                      <i class="far fa-user nav-icon"></i>
+                      <p>Rekamedis</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/barang" class="nav-link">
+                      <i class="nav-icon fas fa-th nav-icon"></i>
+                      <p>Rekamedis Kehamilan</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
